@@ -1,0 +1,248 @@
+* {
+
+	Padding: 0;
+}
+
+/**** NAV BAR ****/
+
+nav {
+	padding: 25px;
+	padding-top: 20px;
+	text-align: center;
+	border-bottom: groove dimgrey;
+}
+
+nav a {
+	margin: 20px;
+	text-decoration: none;
+	color: black;
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+	font-size: 18px;
+}
+
+/***** FOOTER ****/
+
+footer {
+	padding: 40px;
+	background-color: #121c28;
+	text-align: center;
+}
+
+footer i {
+	color: white;
+}
+
+/********** FONT***********/
+
+
+p {
+	font-family: 'Lato', sans-serif;
+}
+
+h2 {
+	font-family: 'Lato', sans-serif;
+}
+
+h3 {
+	font-family: 'Lato', sans-serif;
+}
+
+h4 {
+	font-family: 'Lato', sans-serif;
+}
+
+
+
+/********** VELKOMMEN *********/
+
+.velkommen {
+	padding: 20px;
+	text-align: center;
+}
+
+/********** SECTION BILLEDE - SPLASH ***********/
+section,
+header {
+	max-width: 1200px;
+	margin: 5px auto;
+}
+
+img {
+	width: 100%;
+}
+
+.container {
+	flex-wrap: wrap;
+	display: flex;
+}
+
+/********* PORTFOLIO OVERSKRIFT *******/
+
+.billede h3 {
+	text-align: center;
+}
+
+.billede img {
+	margin-left: 15vw;
+}
+
+/****** container TIL PORTFOLIO *******/
+
+.tema_container {
+
+	flex-basis: 500px;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+
+	-webkit-column-gap: 1em;
+	-moz-column-gap: 1em;
+	column-gap: 1em;
+	margin-left: 1em;
+	margin-right: 1em;
+	padding: 0;
+	font-size: 1.0em;
+}
+
+.tema {
+	display: inline-block;
+	background: #fff;
+	padding: 1rem;
+	box-shadow: 2px 2px 4px 0 #ccc;
+	width: 90%;
+
+	border-bottom: groove dimgrey;
+
+}
+
+.tema img {
+	max-width: 100%;
+
+}
+
+/**************** Tema Link ********************/
+.tema a:link {
+	text-decoration: none;
+	color: black;
+}
+
+/**************Visited links *******************/
+.tema a:visited {
+	color: black;
+	text-decoration: none;
+}
+
+.om_mig {
+	flex-basis: 500px;
+	flex-wrap: wrap;
+	flex-grow: 1;
+	width: 60vw;
+	margin: 5vw;
+	display: inline-block;
+	background: #fff;
+	padding: 1rem;
+	margin-left: 1rem;
+	margin-right: 1rem;
+	box-shadow: 2px 2px 4px 0 #ccc;
+	width: 100%;
+}
+
+.billede img {
+	max-width: 50vw;
+	width: 90%;
+}
+
+/********************* PORTFOLIO side ****************************/
+.portfolio_container {
+	margin: 2em;
+}
+
+.min_portfolio {
+	text-align: center;
+}
+
+@media only screen and (min-width:375px) {}
+
+/********************* DESKTOP **********************************/
+
+@media only screen and (min-width:700px) {
+
+	.container {
+		display: flex;
+	}
+	/**** NAV BAR ****/
+
+	nav {
+		padding: 30px;
+		padding-top: 15px;
+		text-align: center;
+		border-bottom: groove dimgrey;
+	}
+
+	/* container TIL PORTFOLIO */
+
+	.tema_container {
+		flex-direction: row;
+		flex-basis: 720px;
+		display: flex;
+		flex-wrap: wrap;
+		-webkit-column-gap: 1em;
+		-moz-column-gap: 1em;
+		column-gap: 1em;
+		margin-top: 3.5em;
+		margin-left: 5vw;
+		padding: 0;
+		font-size: 1.0em;
+	}
+
+	.tema {
+		display: inline-block;
+		flex-basis: 300px;
+		background: #fff;
+		padding: 1em;
+
+		/*	margin: 0 0 1.5em; */
+		box-shadow: 4px #ccc;
+		width: 100%;
+	}
+
+	.tema img {
+		max-width: 100%;
+	}
+
+	.om_mig {
+		flex-basis: 100px;
+		flex-grow: 1;
+		width: 0vw;
+		margin: 5vw;
+		display: inline-block;
+		background: #fff;
+		padding: 1em;
+		margin-top: 3.5em;
+		margin-left: 1em;
+		margin-right: 5em;
+		box-shadow: 2px 2px 4px 1px #ccc;
+		width: 100%;
+
+	}
+
+	.billede img {
+		margin-left: 1.8vw;
+	}
+
+
+	/**********************PORTFOLIO****************/
+
+	.portfolio_container {
+		margin-left: 25vw;
+		margin-right: 25vw;
+	}
+
+}
+
+
+/* SÆT MAX WIDTH
+@media only screen and (max-width:700px) {
+
+}
